@@ -75,7 +75,29 @@ public final static int DEFAULT_VALUE = -1;
                 operation = "+";
             } else if(expression.indexOf(" - ") != DEFAULT_VALUE){
                 operation = "-";
-            } else{
+            }
+            else if(expression.indexOf(" % ") != DEFAULT_VALUE){
+                operation = "%";
+            }
+            else if(expression.indexOf(" √ ") != DEFAULT_VALUE){
+                operation = "√";
+            }
+            else if(expression.indexOf(" L ") != DEFAULT_VALUE){
+                operation = "L";
+            }
+            else if(expression.indexOf(" l ") != DEFAULT_VALUE){
+                operation = "l";
+            }
+            else if(expression.indexOf(" C ") != DEFAULT_VALUE){
+                operation = "C";
+            }
+            else if(expression.indexOf(" C ") != DEFAULT_VALUE){
+                operation = "C";
+            }
+            else if(expression.indexOf(" T ") != DEFAULT_VALUE){
+                operation = "T";
+            }
+            else{
                 // réturne simplement l'expression convertir en double si elle ne contient pas d'opération
                 return Double.parseDouble(expression);
             }
